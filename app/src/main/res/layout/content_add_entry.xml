@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.larin.aolin1_fueltrack.AddEntry"
+    tools:showIn="@layout/activity_add_entry"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="FuelEntry"
+        android:id="@+id/textView"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:ems="10"
+        android:id="@+id/date"
+        android:hint="Date:  (yyyy-mm-dd)"
+        android:layout_weight="0.14"
+        android:layout_marginTop="40dp" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/station"
+        android:hint="Station  (e.g Costco)"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.14"
+        android:layout_marginTop="90dp" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/odometer"
+        android:layout_gravity="center_horizontal"
+        android:hint="Odometer Reading  (e.g 1234.1 km)"
+        android:layout_weight="0.14"
+        android:layout_marginTop="140dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fuel_grade"
+        android:hint="Fuel Grade   (e.g regular)"
+        android:layout_weight="0.14"
+        android:layout_marginTop="190dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/fuel_amount"
+        android:layout_gravity="center_horizontal"
+        android:hint="Fuel Amount   (e.g 40.123 L)"
+        android:layout_weight="0.14"
+        android:layout_marginTop="240dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/unit_cost"
+        android:layout_gravity="center_horizontal"
+        android:hint="Unit Cost   (e.g 34.2 cent / L)"
+        android:layout_weight="0.14"
+        android:layout_marginTop="290dp" />
+
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Entry"
+        android:id="@+id/add_entry"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="400dp" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:id="@+id/cancel"
+        android:layout_gravity="center_horizontal"
+        android:onClick="cancel"
+        android:layout_marginTop="450dp" />
+
+</RelativeLayout>
